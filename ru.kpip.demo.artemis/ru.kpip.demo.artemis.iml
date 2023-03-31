@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+    <output url="file://$MODULE_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/target/classes" />
+    <output-test url="file://$MODULE_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/target/test-classes" />
+    <content url="file://$MODULE_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis">
+      <sourceFolder url="file://$MODULE_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="openjdk-19" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:artemis-server:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq.examples.broker.camel:camel-war:war:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.jms:jakarta.jms-api:unknown" level="project" />
+  </component>
+</module>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../ru.kpip.demo.camel.route/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../ru.kpip.demo.camel.route/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ru.kpip.demo.camel.route/ru.kpip.demo.camel.route/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ru.kpip.demo.camel.route/ru.kpip.demo.camel.route/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.camel.war/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.camel.dsl/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.camel/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.camel.route/ru.kpip.demo.camel.route/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../ru.kpip.demo.camel.route/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.camel.route/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.bridge/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ru.kpip.demo.artemis/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ru.kpip.demo.camel.dsl" />
+        <module name="ru.kpip.demo.camel.route" />
+        <module name="ru.kpip.demo.artemis" />
+        <module name="artemis-jms-server" />
+        <module name="ru.kpip.demo.bridge" />
+        <module name="artemis-jms-bridge" />
+        <module name="ru.kpip.demo.camel.war" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="19">
+      <module name="artemis-jms-bridge" target="18" />
+      <module name="artemis-jms-server" target="18" />
+      <module name="ru.kpip.demo.artemis" target="19" />
+      <module name="ru.kpip.demo.bridge" target="18" />
+      <module name="ru.kpip.demo.camel.dsl" target="18" />
+      <module name="ru.kpip.demo.camel.route" target="18" />
+      <module name="ru.kpip.demo.camel.war" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.war/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.dsl/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.route/ru.kpip.demo.camel.route/pom.xml" />
+        <option value="$PROJECT_DIR$/../ru.kpip.demo.camel.route/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.route/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.bridge/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.artemis/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/artemis-jms-bridge/pom.xml" />
+        <option value="$PROJECT_DIR$/artemis-jms-server/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/ru.kpip.demo.camel.route/target" />
+  </component>
+</project>

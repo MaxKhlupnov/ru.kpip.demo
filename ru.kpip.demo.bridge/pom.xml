@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ru.kpip.demo</groupId>
+  <artifactId>ru.kpip.demo.bridge</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Archetype - ru.kpip.demo.bridge</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>19</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+
+    <!-- https://mvnrepository.com/artifact/org.eclipse.kura/org.apache.activemq.artemis -->
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-jms-client</artifactId>
+      <version>2.29.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.activemq.examples.modules/artemis-jms-bridge -->
+    <dependency>
+      <groupId>org.apache.activemq.examples.modules</groupId>
+      <artifactId>artemis-jms-bridge</artifactId>
+      <version>2.28.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
+    <dependency>
+      <groupId>javax.jms</groupId>
+      <artifactId>javax.jms-api</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+
+
+
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>artemis-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

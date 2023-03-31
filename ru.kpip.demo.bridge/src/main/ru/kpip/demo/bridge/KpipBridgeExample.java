@@ -1,5 +1,5 @@
 
-package org.apache.activemq.artemis.jms.example;
+package ru.kpip.demo.bridge;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;

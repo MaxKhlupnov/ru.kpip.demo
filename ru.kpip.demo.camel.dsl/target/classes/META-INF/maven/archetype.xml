@@ -1,0 +1,9 @@
+<archetype>
+  <id>ru.kpip.demo.camel.dsl</id>
+  <sources>
+    <source>src/main/java/App.java</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/AppTest.java</source>
+  </testSources>
+</archetype>
