@@ -17,16 +17,26 @@ import org.apache.activemq.artemis.jms.bridge.QualityOfServiceMode;
 import org.apache.activemq.artemis.jms.bridge.impl.JMSBridgeImpl;
 import org.apache.activemq.artemis.jms.bridge.impl.JNDIConnectionFactoryFactory;
 import org.apache.activemq.artemis.jms.bridge.impl.JNDIDestinationFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * @author Max Khlupnov
+ * @date 02/04/2023
  * Пример, который отправляет сообщение из исходного топика и получает егo через очередь приемника.
  * Источник и приемник расположены на 2 разных серверах ActiveMQ Artemis.
  * Очереди источника и приемника соединены мостом JMS, настроенным и запущенным на "целевом" сервере.
  */
 
+@SpringBootApplication
 public class KpipBridgeExample {
 
-    public static void main(final String[] args) throws Exception {
+    public static void main(String[] args) {
+            SpringApplication.run(KpipBridgeExample.class, args);
+        }
+
+
+    public static void main_old(final String[] args) throws Exception {
         String sourceServer = "tcp://localhost:61616";
         String targetServer = "tcp://localhost:61617";
 

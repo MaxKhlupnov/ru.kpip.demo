@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="springframework.spring.jms" type="repository">
+    <properties maven-id="org.springframework:spring-jms:6.0.7" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-jms-6.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-6.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-6.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jcl-6.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-messaging-6.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-tx-6.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

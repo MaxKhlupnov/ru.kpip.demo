@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="springframework.boot.spring.starter.log4j2" type="repository">
+    <properties maven-id="org.springframework.boot:spring-boot-starter-log4j2:3.0.4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-boot-starter-log4j2-3.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j2-impl-2.19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-jul-2.19.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
