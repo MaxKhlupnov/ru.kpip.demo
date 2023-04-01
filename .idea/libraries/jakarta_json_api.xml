@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jakarta.json.api" type="repository">
+    <properties maven-id="jakarta.json:jakarta.json-api:2.1.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jakarta.json-api-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

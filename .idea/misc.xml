@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.war/pom.xml" />
-        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.dsl/pom.xml" />
         <option value="$PROJECT_DIR$/ru.kpip.demo.camel.route/ru.kpip.demo.camel.route/pom.xml" />
         <option value="$PROJECT_DIR$/../ru.kpip.demo.camel.route/pom.xml" />
         <option value="$PROJECT_DIR$/ru.kpip.demo.artemis/ru.kpip.demo.artemis/pom.xml" />
         <option value="$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge/pom.xml" />
-        <option value="$PROJECT_DIR$/ru.kpip.demo.camel.route/pom.xml" />
-        <option value="$PROJECT_DIR$/ru.kpip.demo.bridge/pom.xml" />
-        <option value="$PROJECT_DIR$/ru.kpip.demo.artemis/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/artemis-jms-bridge/pom.xml" />
+        <option value="$PROJECT_DIR$/artemis-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/artemis-maven-plugin/pom.xml" />
         <option value="$PROJECT_DIR$/artemis-jms-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.kpip.demo.bridge/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

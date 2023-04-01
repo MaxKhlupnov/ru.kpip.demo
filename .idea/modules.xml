@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/artemis-jms-bridge/artemis-jms-bridge.iml" filepath="$PROJECT_DIR$/artemis-jms-bridge/artemis-jms-bridge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/artemis-jms-server/artemis-jms-server.iml" filepath="$PROJECT_DIR$/artemis-jms-server/artemis-jms-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ru.kpip.demo.artemis.iml" filepath="$PROJECT_DIR$/ru.kpip.demo.artemis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ru.kpip.demo.bridge.iml" filepath="$PROJECT_DIR$/ru.kpip.demo.bridge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ru.kpip.demo.camel.dsl/ru.kpip.demo.camel.dsl.iml" filepath="$PROJECT_DIR$/ru.kpip.demo.camel.dsl/ru.kpip.demo.camel.dsl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ru.kpip.demo.camel.route.iml" filepath="$PROJECT_DIR$/ru.kpip.demo.camel.route.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ru.kpip.demo.camel.war/ru.kpip.demo.camel.war.iml" filepath="$PROJECT_DIR$/ru.kpip.demo.camel.war/ru.kpip.demo.camel.war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge.iml" filepath="$PROJECT_DIR$/ru.kpip.demo.bridge/ru.kpip.demo.bridge.iml" />
     </modules>
   </component>
 </project>

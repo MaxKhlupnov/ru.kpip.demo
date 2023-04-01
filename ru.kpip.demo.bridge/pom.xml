@@ -7,9 +7,10 @@
   <name>Archetype - ru.kpip.demo.bridge</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <maven.compiler.source>19</maven.compiler.source>
-    <maven.compiler.target>19</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
+
 
   <dependencies>
 
@@ -17,15 +18,31 @@
     <dependency>
       <groupId>org.apache.activemq</groupId>
       <artifactId>artemis-jms-client</artifactId>
-      <version>2.29.0-SNAPSHOT</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.apache.activemq.examples.modules/artemis-jms-bridge -->
-    <dependency>
-      <groupId>org.apache.activemq.examples.modules</groupId>
-      <artifactId>artemis-jms-bridge</artifactId>
       <version>2.28.0</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.activemq/artemis-core-client -->
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-core-client</artifactId>
+      <version>2.28.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.9.4</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-collections4</artifactId>
+      <version>4.4</version>
+    </dependency>
+
+
 
     <!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
     <dependency>
@@ -35,17 +52,47 @@
     </dependency>
 
 
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.20.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.20.0</version>
+    </dependency>
 
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-jms-server</artifactId>
+      <version>2.28.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-commons</artifactId>
+      <version>2.28.0</version>
+    </dependency>
 
   </dependencies>
 
+
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.activemq</groupId>
-        <artifactId>artemis-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version>
+            <configuration>
+              <archive>
+                <manifestEntries>
+                  <Built-By>Max Khlupnov</Built-By>
+                  <Class-Path>.</Class-Path>
+                </manifestEntries>
+              </archive>
+            </configuration>
+          </plugin>
+            </plugins>
   </build>
-
 </project>

@@ -35,14 +35,22 @@ public class KpipBridgeExample {
                 targetServer);
 
         // Step 1. Create JNDI contexts for source and target servers
-        InitialContext sourceContext = JMSBridgeExample.createContext(sourceServer);
-        InitialContext targetContext = JMSBridgeExample.createContext(targetServer);
+        InitialContext sourceContext = KpipBridgeExample.createContext(sourceServer);
+
+        InitialContext targetContext = KpipBridgeExample.createContext(targetServer);
 
         Hashtable<String, String> sourceJndiParams = createJndiParams(sourceServer);
         Hashtable<String, String> targetJndiParams = createJndiParams(targetServer);
         // Step 2. Create and start a JMS Bridge
         // Note, the Bridge needs a transaction manager, in this instance we will use the JBoss TM
-        JMSBridge jmsBridge = new JMSBridgeImpl(new JNDIConnectionFactoryFactory(sourceJndiParams, "ConnectionFactory"), new JNDIConnectionFactoryFactory(targetJndiParams, "ConnectionFactory"), new JNDIDestinationFactory(sourceJndiParams, "source/topic"), new JNDIDestinationFactory(targetJndiParams, "target/queue"), null, null, null, null, null, 5000, 10, QualityOfServiceMode.DUPLICATES_OK, 1, -1, null, null, true);
+
+        JMSBridge jmsBridge = new JMSBridgeImpl(new JNDIConnectionFactoryFactory(sourceJndiParams,
+                "ConnectionFactory"), new JNDIConnectionFactoryFactory(targetJndiParams,
+                "ConnectionFactory"), new JNDIDestinationFactory(sourceJndiParams, "source/topic"),
+                new JNDIDestinationFactory(targetJndiParams, "target/queue"),
+                "artemis", "artemis", "artemis", "artemis",
+                null, 5000, 10, QualityOfServiceMode.DUPLICATES_OK,
+                1, -1, null, null, true);
 
         Connection sourceConnection = null;
         Connection targetConnection = null;
@@ -50,10 +58,11 @@ public class KpipBridgeExample {
             jmsBridge.start();
             // Step 3. Lookup the *source* JMS resources
             ConnectionFactory sourceConnectionFactory = (ConnectionFactory) sourceContext.lookup("ConnectionFactory");
+
             Topic sourceTopic = (Topic) sourceContext.lookup("source/topic");
 
             // Step 4. Create a connection, a session and a message producer for the *source* topic
-            sourceConnection = sourceConnectionFactory.createConnection();
+            sourceConnection = sourceConnectionFactory.createConnection("artemis","artemis");
             Session sourceSession = sourceConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer sourceProducer = sourceSession.createProducer(sourceTopic);
 
@@ -71,7 +80,7 @@ public class KpipBridgeExample {
             Queue targetQueue = (Queue) targetContext.lookup("target/queue");
 
             // Step 8. Create a connection, a session and a message consumer for the *target* queue
-            targetConnection = targetConnectionFactory.createConnection();
+            targetConnection = targetConnectionFactory.createConnection("artemis","artemis");
             Session targetSession = targetConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageConsumer targetConsumer = targetSession.createConsumer(targetQueue);
 
@@ -85,6 +94,10 @@ public class KpipBridgeExample {
             // Step 11. Display the received message's ID and this "bridged" message ID
             System.out.format("Message ID         : %s%n", messageReceived.getJMSMessageID());
             System.out.format("Bridged Message ID : %s%n", messageReceived.getStringProperty("AMQ_BRIDGE_MSG_ID_LIST"));
+        }
+        catch (Exception ex){
+            System.out.format("Error      : %s", ex.getMessage());
+            throw ex;
         } finally {
             // Step 12. Be sure to close the resources!
             jmsBridge.stop();
