@@ -1,5 +1,5 @@
-FROM openjdk:19
+FROM openjdk:19-jdk-alpine
 
-COPY ./target/artifacts/ru_kpip_demo_bridge_jar/ru.kpip.demo.bridge.jar /kpip-demo-bridge
-WORKDIR //kpip-demo-bridge
+COPY ./target/artifacts/ru_kpip_demo_bridge_jar/ru.kpip.demo.bridge.jar /kpip-demo-bridge/
+WORKDIR /kpip-demo-bridge
 ENTRYPOINT ["java","-cp", "ru.kpip.demo.bridge.jar", "ru.kpip.demo.bridge.KpipBridgeExample"]
